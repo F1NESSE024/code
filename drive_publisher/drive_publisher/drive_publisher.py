@@ -23,7 +23,7 @@ class DrivePublisher(Node):
             10)
         
         # Parameters
-        self.declare_parameter('max_speed', 2.0)
+        self.declare_parameter('max_speed', 3.0)
         self.declare_parameter('max_steering_angle', 0.34)
         self.declare_parameter('safety_distance', 0.5)  # Distance to start slowing down
         self.declare_parameter('stop_distance', 0.01)    # Distance to completely stop
