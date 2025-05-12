@@ -1,7 +1,10 @@
 /**:
   ros__parameters:
-    max_speed: 2.0  # Maximum speed in m/s
+    max_speed: 0.8  # Maximum speed in m/s (reduced from 1.0)
     max_steering_angle: 0.34  # Maximum steering angle in radians
-    safety_distance: 0.5  # Distance to start slowing down in meters
-    stop_distance: 0.3  # Distance to completely stop in meters
-    angle_increment: 0.0058  # LiDAR angle increment in radians 
+    stop_distance: 0.01  # Distance to completely stop in meters
+    min_speed_distance: 2.0  # Distance at which speed starts reducing in meters (increased from 1.5)
+    angle_increment: 0.0058  # LiDAR angle increment in radians
+    steering_smoothing: 0.6  # Steering smoothing factor (increased from 0.5)
+    turn_speed_factor: 0.3  # Speed reduction factor when turning (reduced from 0.4)
+    recovery_zone: 0.8  # Distance required to start straightening after a turn 
